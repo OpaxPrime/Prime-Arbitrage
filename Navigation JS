@@ -1,0 +1,25 @@
+export default function Navigation({ isPremium, setIsPremium }) {
+    return `
+        <nav class="nav-container">
+            <div class="nav-content">
+                <h1 class="nav-logo">PRIME ARBITRAGE</h1>
+                <div class="nav-actions">
+                    <button class="nav-icon">
+                        <i class="bell-icon"></i>
+                    </button>
+                    <button class="nav-icon">
+                        <i class="search-icon"></i>
+                    </button>
+                    <button class="nav-icon">
+                        <i class="settings-icon"></i>
+                    </button>
+                    ${!isPremium ? `
+                        <button class="button-primary" onclick="setIsPremium(true)">
+                            Upgrade to Premium
+                        </button>
+                    ` : ''}
+                </div>
+            </div>
+        </nav>
+    `;
+}
