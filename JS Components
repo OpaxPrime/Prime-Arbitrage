@@ -1,0 +1,27 @@
+export default function TrendingItems({ items }) {
+    return `
+        <div class="trending-container">
+            <h2 class="trending-title">
+                <i class="trending-up-icon"></i>
+                High Value, Fast Moving
+            </h2>
+            <div class="trending-items">
+                ${items.map(item => `
+                    <div class="item-card">
+                        <div class="item-header">
+                            <h3 class="item-name">${item.name}</h3>
+                            <span class="item-profit">$${item.profit} potential profit</span>
+                        </div>
+                        <div class="item-details">
+                            <span>Current: $${item.currentPrice}</span>
+                            <span>Lowest: $${item.lowestPrice}</span>
+                            <span class="risk-${item.risk}">
+                                Risk: ${item.risk}
+                            </span>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+}
