@@ -1,0 +1,8 @@
+{
+  "homepage": "https://yourusername.github.io/prime-arbitrage",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    ...
+  }
+}
