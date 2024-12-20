@@ -1,0 +1,46 @@
+.trending-container {
+    padding: 1.5rem;
+}
+
+.trending-title {
+    font-size: 1.25rem;
+    color: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.item-card {
+    background: var(--secondary-bg);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.item-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.item-profit {
+    color: #34d399;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.risk-low { color: #34d399; }
+.risk-medium { color: #fbbf24; }
+.risk-high { color: #ef4444; }
