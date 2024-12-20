@@ -1,0 +1,8 @@
+# Add all files
+git add .
+
+# Commit
+git commit -m "Initial commit"
+
+# Push to GitHub
+git push -u origin main
