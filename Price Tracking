@@ -1,0 +1,22 @@
+export function calculateProfitMargin(currentPrice, lowestPrice) {
+    return ((currentPrice - lowestPrice) / currentPrice * 100).toFixed(2);
+}
+
+export function assessRisk(priceHistory, currentPrice) {
+    const volatility = calculateVolatility(priceHistory);
+    const priceChange = calculatePriceChange(priceHistory);
+    
+    if (volatility > 20 || priceChange < -15) return 'high';
+    if (volatility > 10 || priceChange < -10) return 'medium';
+    return 'low';
+}
+
+function calculateVolatility(priceHistory) {
+    // Implementation of price volatility calculation
+    return 10; // Placeholder
+}
+
+function calculatePriceChange(priceHistory) {
+    // Implementation of price change calculation
+    return -5; // Placeholder
+}
