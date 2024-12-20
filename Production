@@ -1,0 +1,25 @@
+       return [
+            { id: 1, name: "GPU RTX 4090", currentPrice: 1599, lowestPrice: 1399, profit: 200, risk: "low" },
+            { id: 2, name: "PS5 Console", currentPrice: 499, lowestPrice: 449, profit: 50, risk: "medium" },
+            { id: 3, name: "Nike Air Max", currentPrice: 189, lowestPrice: 129, profit: 60, risk: "low" },
+        ];
+    } catch (error) {
+        console.error('Error fetching trending items:', error);
+        return [];
+    }
+}
+
+export async function fetchPriceHistory(itemId) {
+    try {
+        // In production, this would be a real API call
+        return [
+            { date: '2024-01', price: 1599 },
+            { date: '2024-02', price: 1550 },
+            { date: '2024-03', price: 1499 },
+            { date: '2024-04', price: 1399 },
+        ];
+    } catch (error) {
+        console.error('Error fetching price history:', error);
+        return [];
+    }
+}
